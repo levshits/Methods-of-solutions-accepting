@@ -4,8 +4,8 @@ require_relative 'experiment_element'
 
 def mousebutton_click(canvas, x_max, y_max)
   canvas.delete('all')
-  experiment = Experiment.new(2000,x_max,y_max)
-  experiment.k_middle(10,canvas, x_max,y_max)
+  experiment = Experiment.new(100,x_max,y_max)
+  experiment.k_middle(3,canvas)
 end
 
 main_window = TkRoot.new {title  "Methodology of solutions accepting"; minsize(500,400)}
